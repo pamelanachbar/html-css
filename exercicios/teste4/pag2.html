@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Página - Imagens Dinâmicas</title>
+</head>
+<body>
+    <p>Para voltar: <a href="index.html" ref="prev"> clique aqui</a></p>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador</p>
+
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="imagens/fotoPequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/fotoMedia.png" type="image/png">
+        <img src="imagens/fotoGrande.png" alt="Imagem Flexivel">
+        
+    </picture>
+
+    <h1>Ouça este música para deixar num clima de férias!</h1>
+    <audio src="midia/bruno1973.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop
+    source src="midia/bruno1973.mp3" type="audio.mpeg"
+    source src="midia/bruno1973.ogg" type="audio.ogg"
+    souce src="midia/bruno1973.wav" type="audio.wav"
+    ></audio>
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1{
+          background-color: blueviolet;
+        }
+        /*Paragrafo que esta dentro da div, filho
+        display: none significa que não vai aparecer o paragrafo
+        */
+        div > p{
+                display: none;
+
+        }
+        /*Quando eu passar o mouse na div, o paragrafo que está dentro*/
+        div:hover > p{
+            display: block;
+            color: white ;
+            background-color: blueviolet;
+            width: 300px;
+            border-radius:5px ;
+            text-align: center;
+        }
+        div:hover{
+            color: rgba(167, 116, 214, 0.966);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo<p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

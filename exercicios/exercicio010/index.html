@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Link que aponta para <strong>outro site</strong>, como youtube, github, replit etc. Ao clicar na frase, te manda nesse site. Com a tag &lta&gt;, isso é possivel. Dentro do parametro href (referência de hipertexto), onde coloca-se a url do site inteira dentro. <br>Exemplo: </p>
+
+    <p>Você pode visitar o<a href="file:///C:/Users/Pamela%20Nachbar/OneDrive/Documentos/HTML%20JAVA%20CSS/HTML%20CSS/exercicio009/index.html" > meu site que fala sobre listas</a></p>
+    <p>Percebe-se que quando clicamos no link, o meu site saiu e o outro site ficou na mesma aba. Para clicar no link e criar outra aba, basta criar dois parâmetros, target="_blank" e rel="external"</p>
+
+    <p>Você pode visitar o<a href="file:///C:/Users/Pamela%20Nachbar/OneDrive/Documentos/HTML%20JAVA%20CSS/HTML%20CSS/exercicio008b/index.html" target="_blank" rel="external"> meu site que fala sobre código-fonte e citações</a></p>
+
+
+    <p>rel="external", link do tipo externo, e target="_blank", quero que tenha um alvo que tenha uma janela em branco</p>
+
+
+    <h2>Links Internos</h2>
+    <p>Links internos, faz uma relação com uma página que está dentro do site, servidor. Não precisa colocar a url inteira, apenas criar uma nova página da mesma pasta do index e dentro de href, dar o ctrl espaço que aparece a página.</p>
+
+    <p>Essa é a primeira págino do meu site. Se você quiser, pode visitar minha <a href="pag002.html" ref="next">segunda página</a></p>
+    <p>Como a segunda página é do meu próprio site, não precisamos utillizar targer, ou simplesmente colocar target="_self"</p>
+
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="livro/Exercicio_DER.pdf" download="Exercicio_DER.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/Exercicio_DER.rar" download="Exercicio_DER.zip" type="application/zip">Livro Compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

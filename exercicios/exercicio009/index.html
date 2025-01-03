@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <p>Com a tag &ltol&gt;, order list cria-se uma lista ordenada e em cada item da lista basta utilizar a tag &ltli&gt;, list item. Ele automaticamente numera as lista e se algum item for adicionado no meio, ele arruma toods os outros itens. Não é necessário fechar a tag &ltli&gt;</p>
+    <ol>
+        <li>Wake up</li>
+        <li>Get up</li>
+        <li>Brush my teeth</li>
+        <li>Get breakfast</li>
+        <li>Go to the school</li>
+    </ol>
+
+    <ol type="A">
+   <li>Wake Up</li>
+   <li>Get Up</li>
+   <li>Brush my teeth</li>
+   <li>Get breakfast</li>
+   <li>Go to the school</li>
+    </ol>
+
+    <p>Sendo type igual a "a", faz uma lista a,b,c,d..., sendo I, com números romanos e i com números romanos minúsculos</p>
+    <p>Por padrão, type começa com 1, mas para modificar começando do zero basta adicionar start=número</p>
+
+    <ol type="1" start="0">
+        <li>Vetor[0]=1</li>
+        <li>Vetor[1]=2</li>
+        <li>Vetor[3]=2</li>
+        <li>Vetor[4]=3</li>
+    </ol>
+    <h2>Lista não-ordenadas</h2>
+    <p>Para listar listas não ordenadas, utilizamos a tag &ltul&gt;, unordered list, onde temos por padrão o type por disc, mas pode utilizar circle e square</p>
+   <ul type="square">
+   <li>Pão</li>
+   <li>Queijo</li>
+   <li>Alface</li>
+   <li>Tomate</li> <!--ctrl + enter-->
+   </ul>
+
+   <h2>Listas mistas</h2>
+   
+   <ol>
+    <li>Doces</li>
+    <ol type="a">
+        <li>Brigadeiro</li>
+        <li>Sorvete</li>
+        <li>Bolo</li>
+        <li>Paçoca</li></li>
+    </ol>
+    <li>Salgados</li>
+    <ol type="a" start="5"> 
+        <li>Torta</li>
+        <li>Lasanha</li>
+        <li>Pão</li>
+        <li>Frango</li>
+    </ol>
+   <!--Como start é um numeral começamos com 5 porque é a posição do e no alfabeto.-->
+   </ol>
+
+   <h2>Jogos Favoritos</h2>
+   <ol>
+    <li>Jogos de Tiro</li>
+    <ul type="square">
+        <li>Free Fire</li>
+        <li>Call of Duty</li>
+    </ul>
+    <li>Jogos 2D</li>
+    <ul type="square">
+        <li>Titan Souls</li>
+        <li>Undertale</li>
+        <ul type="circle">
+            <li>Rota Neutra</li>
+            <li>Rota Genocida</li>
+        </ul>
+    </ul>
+    <li>Jogos de Terror</li>
+    <ul type="square">
+        <li>Left for Dead 2</li>
+        <li>Devour</li>
+
+    </ul>
+   </ol>
+
+   <h2>Listas de Definições</h2>
+   <p>Para utilizar a Listas de Definições, usa-se a tag &ltdl&gt;, definition list, dentro temos a tag &ltdt&gt;, definion term, e a tag &ltdd&gt;, onde coloca a descrição do termo. É como se fosse um dicionário, definindo termos.</p>
+
+   <dl>
+    <dt>HTML</dt> <!--Termo-->
+    <dd>Linguagem de Marcação para a criação do conteúdo de um site.</dd> <!--Descrição-->
+
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site</dd>
+
+    <dt>Java Script</dt>
+    <dd>Linguagem de Programação para a criação de interatividade de um site.</dd>
+   </dl>
+
+   <p>O Google dá valor as listas de definições quando é procurado por um termo.</p>
+</body>
+</html>

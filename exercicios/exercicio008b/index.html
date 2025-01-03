@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formataçções</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando<code> document.getElementById('teste')</code> é escrito em JavaScript</p>
+    <p>Fontes monoespaçadas são fontes que as larguras das letras possuem a mesma largura, ótima para ler códigos</p>
+    <p>Porém, o code não dá quebras de linhas utilizando apenas ele <br>Exemplo: </p>
+    <code>
+        printf("Digite um número:\n");
+        scanf("%d",&num);
+        if(num%2==0)
+        {
+            printf("Este número é par!");
+        }
+        else 
+        {
+            printf("Este número é ímpar!");
+        }
+    </code>
+    <p>Para isso devemos envelopar a tag &ltcode&gt;, com a tag &ltpre&gt;, essa tag considera quebras de linhas sem a tag br, se chama pré-formatação <br>Exemplo:</p>
+    <pre>
+        <code>
+             printf("Digite um número:\n");
+            scanf("%d",&num);
+            if(num%2==0)
+            {
+                printf("Este número é par!");
+            }
+            else
+            {
+                printf("Este número é ímpar!");
+            }
+        </code>
+    </pre>
+    <p>Para tirar as tabulaçõees, pressione shift tab e para colocar apena tab após selecionar o código</p>
+    
+<pre>
+<code>
+printf("Digite um número:\n");
+scanf("%d",&num);
+if(num%2==0)
+{
+    printf("Este número é par!");
+}
+else
+{
+    printf("Este número é ímpar!");
+}
+</code>
+</pre>
+
+<h2>Citações</h2>
+<h3>Citação Simples</h3>
+<p>Para utilizar aspas em citações e dar sentido na frase sendo uma citação, utilizar a tag &ltq&gt;, de "quote". Obs: nem sempre aspas querem dizer citação, então só utilzar quando for mesmo uma citação.</p>
+<p>Como diria o pai de um amigo:<q> o computador é um burro muito rápido</q></p>
+
+<h3>Citação Completa</h3>
+<p>Tem quebra de linha e espaçamento, com a tag &ltblockquote&gt;, e dentro da tag cite"", colocar o link de citação</p>
+<p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+<blockquote cite="https://www.estantevirtual.com.br/livros/ed-tittel-jeff-noble/html-xhtml-e-css-para-leigos">
+A diferença entre elementos inline e um bloco de texto é importante. Os eleementos HTML neste capítulo descrevem elementos de bloco de texto.
+</blockquote>
+
+<h2>Abreviações</h2>
+<p>Para dizer para o visitante do site o que a abreviação utilizada significa, utilize o tag &ltabbr&gt;, e dentro de title, colocar o significado</p>
+<p>Estou estudando <abbr title="HyperText Markup Languauge ">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+
+<h2>Texto Invertido </h2>
+<p>Utiliza-se a tag bdo, com rtl </p>
+<p><bdo dir="rtl">Estou estudando HTML e CSS. Estou adorando</bdo></p>
+</body>
+</html>
