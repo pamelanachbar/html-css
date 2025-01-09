@@ -35,6 +35,10 @@ header > h1{
     text-decoration: none;
     padding-bottom: 50px;
 }
+
+header a{
+    text-decoration: none;
+}
 #autor:hover{
     text-decoration: underline;
 }
