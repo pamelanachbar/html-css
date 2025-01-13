@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas Reponsivas</title>
+    <title>Site de Teste</title>
     <style>
         body{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: lightgray;
+            
         }
         table{
-            width: 800px;
             border-collapse: collapse;
         }
         caption{
@@ -21,15 +22,16 @@
             padding: 8px;
             border: 1px solid black;
         }
-        #container{
-            overflow-x: auto;
+       
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+        tr:nth-child(odd){
+            background-color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Tabelas em telas pequenas</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, fugiat modi cupiditate corporis architecto, est voluptatem dignissimos nihil voluptate nesciunt repudiandae? Minima corrupti iusto nesciunt eius minus qui consectetur laboriosam.</p>
-
     <div id="container">
         <table>
             <caption>Vendas de produtos por mês</caption>
