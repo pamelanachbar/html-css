@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulárip</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;4
+        }
+        form{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        form input{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="inome">Nome: </label>
+        <input type="text" name="nome" id="inome" required minlength="2" maxlength="30" placeholder="nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média: </label>
+            <input type="number" name="media" id="imedia" maxlength="2" max="10" min="0" step="0.1">
+        </p>
+        <p>
+            <label for="imes">Período Letivo: </label>
+            <input type="month" name="mes" id="imes" value="2025-01">
+        </p>
+        <p><label for="idata">Dia da Prova: </label>
+        <input type="date" name="data" id="idata">
+        </p>
+        <p><label for="ihora">Horário da Prova: </label>
+        <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
