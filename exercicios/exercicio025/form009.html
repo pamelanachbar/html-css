@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inumero1">Número 1: </label>
+            <input type="range" name="numero1" id="inumero1" min="0" max="10" oninput="isoma.innerHTML = Number(inumero1.value)">
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
