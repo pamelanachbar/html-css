@@ -9,7 +9,30 @@ Mobile devices – 320px — 480px.
   Extra large screens, TV – 1201px, and more
 */
 @media print{
-
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        /*Desnecessário, pois impressora não imprime imagem de fundo*/
+    }
+    main{
+        width: 90vw;
+        border: 1px solid black;
+    }
+    main::after{
+        content: 'Essa impressão foi feita através do site ...';
+        text-decoration: overline;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
 }
 
 /*
@@ -23,14 +46,36 @@ Já fizemos a versão mobile, não precisando ser feita novamente
    body{
     background-image: url(../imagens/back-tablet.jpg);
    }
+   #phone{display: none;}
+   #tablet{display: block;}
+   #print{display: none;}
+   #pc{display: none;}
+   #tv{display: none;}
 }
-@media screen and (min-width: 769px ) and (max-width: 1024px) {
-    
+@media screen and (min-width: 769px ) and (max-width: 1024px) { /*DESKTOP*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
 }
-@media screen and (min-width: 1201px) {
+/*@media screen and (min-width: 1201px) {
     
-}
+}*/
 
