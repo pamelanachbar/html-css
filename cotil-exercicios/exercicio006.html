@@ -12,8 +12,6 @@
 
         td, th{
             border: 1px solid black;
-            text-align: center;
-            padding: 5px;
         }
     </style>
 </head>
@@ -74,10 +72,11 @@
 
      <!-- Tabelas -->
 
-     <table style="border-collapse: collapse;">
+     <table border="3px", bordercolor="#FF0000", width="50%" bgcolor="violet" align="center" cellpadding="10px" cellspacing="10px">
+        <caption>Total obtido da loja</caption>
        <thead>
-        <tr>
-            <th>Produtos</th>
+        <tr align="center">
+            <th bgcolor="pink", height="100">Produtos</th>
             <th>Quatidade</th>
             <th>Preço unidade</th>
         </tr>
@@ -85,7 +84,7 @@
 
        <tbody>
         <tr>
-            <td>Chocolate</td>
+            <td align="right">Chocolate</td>
             <td>3</td>
             <td>R$1.00</td>
 
@@ -105,5 +104,22 @@
         </tr>
        </tfoot>
      </table>
+
+
+     <!-- Formulários -->
+
+     <form action="" accept-charset="UTF-8" autocomplete="on">
+        <label for="imes">Mês</label> <input type="month" name="mes" id="imes"> 
+        <input type="week" name="" id="">
+        <input type="text" name="" id="" spellcheck="true" >
+        <select name="" id="" size="5" multiple>
+            <optgroup label=""></optgroup>
+            <option value="">Chocolate</option>
+            <option value="">Chocolate</option>
+            <option value="">Chocolate</option>
+            <option value="">Chocolate</option>
+            <option value="">5</option>
+        </select>
+     </form>
 </body>
 </html>
